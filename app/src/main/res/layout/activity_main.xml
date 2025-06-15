@@ -22,15 +22,15 @@
 
     <Button
         android:id="@+id/searchButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Найти последнее вхождение"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="16dp"
+        android:text="Найти последнее вхождение" />
 
     <TextView
         android:id="@+id/resultText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="114dp"
         android:layout_marginTop="16dp"
-        android:textSize="16sp"/>
+        android:textSize="16sp" />
 </LinearLayout>

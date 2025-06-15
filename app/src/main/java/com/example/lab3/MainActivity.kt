@@ -25,6 +25,14 @@ class MainActivity : ComponentActivity() {
             val lastIndexByName = str.indexOfLast { it == charToFind[0] }
             //обращение по индексу
             val lastIndexByAddress = inputString.text.toString().indexOfLast { it == charToFind[0] }
+
+            val output = """
+                    Результат:
+                    - Обращение по имени: ${if (lastIndexByName == -1) "Не найдено" else "Позиция: ${lastIndexByName + 1}"}
+                    - Обращение через адрес: ${if (lastIndexByAddress == -1) "Не найдено" else "Позиция: ${lastIndexByAddress + 1}"}
+                """.trimIndent()
+
+            resultText.text = output
         }
     }
 }
