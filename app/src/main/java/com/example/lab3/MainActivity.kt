@@ -21,6 +21,10 @@ class MainActivity : ComponentActivity() {
             val str = inputString.text.toString()
             val charToFind = inputChar.text.toString()
 
+            //обращение через переменную str
+            val lastIndexByName = str.indexOfLast { it == charToFind[0] }
+            //обращение по индексу
+            val lastIndexByAddress = inputString.text.toString().indexOfLast { it == charToFind[0] }
         }
     }
 }
