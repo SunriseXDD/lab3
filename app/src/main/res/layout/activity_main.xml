@@ -12,7 +12,6 @@
         android:hint="Введите строку"
         android:inputType="text"/>
 
-    <!-- Поле для ввода символа -->
     <EditText
         android:id="@+id/inputChar"
         android:layout_width="match_parent"
@@ -21,4 +20,17 @@
         android:inputType="text"
         android:layout_marginTop="8dp"/>
 
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Найти последнее вхождение"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"/>
 </LinearLayout>
