@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/inputString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите строку"
+        android:inputType="text"/>
+
+    <!-- Поле для ввода символа -->
+    <EditText
+        android:id="@+id/inputChar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите символ для поиска"
+        android:inputType="text"
+        android:layout_marginTop="8dp"/>
 
 </LinearLayout>
